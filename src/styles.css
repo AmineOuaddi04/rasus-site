@@ -38,9 +38,14 @@ button { font: inherit; }
 header { position: absolute; z-index: 5; inset: 0 0 auto; height: 74px; color: #2b211c; }
 .nav { display: flex; height: 100%; align-items: center; gap: 42px; }
 .brand { margin-right: 18px; font-family: Arial, Helvetica, sans-serif; font-size: 35px; font-weight: 300; letter-spacing: -.07em; line-height: 1; }
-.links { display: flex; gap: 29px; margin: auto; font-size: 13px; }
+.links { display: flex; gap: 29px; margin: auto; font-family: 'DM Sans', 'Geist', sans-serif; font-size: 13px; font-weight: 400; letter-spacing: .01em; }
 .links a { padding-block: 8px; transition: color .2s; }
 .links a:hover { color: var(--copper); }
+.address-link { color: inherit; transition: transform .3s ease, border-color .3s ease, box-shadow .3s ease; }
+.address-link:hover { transform: translateY(-2px); border-color: var(--copper); box-shadow: 0 9px 24px #5d402528; }
+.address-link:focus-visible { outline: 2px solid var(--copper); outline-offset: 4px; }
+.address-arrow { flex: none; color: var(--copper); transition: transform .3s ease; }
+.address-link:hover .address-arrow { transform: translate(2px,-2px); }
 .pill { display: inline-flex; align-items: center; gap: 18px; padding: 10px 14px 10px 20px; border: 1px solid var(--copper); border-radius: 999px; font-size: 13px; white-space: nowrap; transition: .2s; }
 .pill:hover { background: var(--copper); color: #fff; }
 .round { display: grid; width: 30px; height: 30px; place-items: center; border-radius: 50%; background: #fffaf4; color: var(--copper); font-size: 18px; line-height: 1; }
@@ -162,3 +167,4 @@ footer { background: #211916; color: #eee3d9; }
   .reveal { opacity: 1; transform: none; }
   .reveal-image { clip-path: none; }
 }
+
