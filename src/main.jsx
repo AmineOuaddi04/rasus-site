@@ -231,7 +231,11 @@ function FinalCTA() {
             <img src={assets.wellness} alt="Un momento de descanso y bienestar con luz natural" />
             <figcaption className="photo-caption">Ciencia estética<br />para sentirte bien</figcaption>
           </figure>
-          <div className="absolute -bottom-4 -left-4 z-20 flex items-center gap-3 rounded-full border border-rasus-line bg-rasus-cream px-4 py-3 shadow-lg shadow-[#5d40251a] md:bottom-8 md:-left-8"><span className="icon"><MapPin size={19} strokeWidth={1.4} /></span><span className="font-geist text-xs leading-snug text-rasus-muted">Marqués de Murrieta, 48<br /><strong className="font-medium text-rasus-ink">Logroño</strong></span></div>
+          <a className="address-link absolute -bottom-4 -left-4 z-20 flex items-center gap-3 rounded-full border border-rasus-line bg-rasus-cream px-4 py-3 shadow-lg shadow-[#5d40251a] md:bottom-8 md:-left-8" href={`https://www.google.com/maps/dir/?api=1&destination=${encodeURIComponent('Calle Marqués de Murrieta, 48, 26005 Logroño, La Rioja, España')}`} target="_blank" rel="noreferrer" aria-label="Cómo llegar a Rasus desde tu ubicación en Google Maps" title="Cómo llegar desde tu ubicación">
+            <span className="icon"><MapPin size={19} strokeWidth={1.4} /></span>
+            <span className="font-geist text-xs leading-snug text-rasus-muted">Marqués de Murrieta, 48<br /><strong className="font-medium text-rasus-ink">Logroño</strong></span>
+            <ArrowUpRight className="address-arrow" size={15} aria-hidden="true" />
+          </a>
         </div>
       </div>
     </section>
@@ -282,3 +286,4 @@ function App() {
 export default App
 
 createRoot(document.getElementById('root')).render(<App />)
+
